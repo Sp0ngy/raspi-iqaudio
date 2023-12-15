@@ -16,7 +16,7 @@ state.IQaudIOCODEC {
 	control.2 {
 		iface MIXER
 		name 'Mic 2 Volume'
-		value 5
+		value 7
 		comment {
 			access 'read write'
 			type INTEGER
@@ -24,14 +24,14 @@ state.IQaudIOCODEC {
 			range '0 - 7'
 			dbmin -600
 			dbmax 3600
-			dbvalue.0 2400
+			dbvalue.0 3600
 		}
 	}
 	control.3 {
 		iface MIXER
 		name 'Aux Volume'
-		value.0 19
-		value.1 19
+		value.0 63
+		value.1 63
 		comment {
 			access 'read write'
 			type INTEGER
@@ -39,8 +39,8 @@ state.IQaudIOCODEC {
 			range '0 - 63'
 			dbmin -5400
 			dbmax 1500
-			dbvalue.0 -5100
-			dbvalue.1 -5100
+			dbvalue.0 1500
+			dbvalue.1 1500
 		}
 	}
 	control.4 {
@@ -110,7 +110,7 @@ state.IQaudIOCODEC {
 	control.8 {
 		iface MIXER
 		name 'Lineout Volume'
-		value 51
+		value 63
 		comment {
 			access 'read write'
 			type INTEGER
@@ -118,7 +118,7 @@ state.IQaudIOCODEC {
 			range '0 - 63'
 			dbmin -4800
 			dbmax 1500
-			dbvalue.0 300
+			dbvalue.0 1500
 		}
 	}
 	control.9 {
@@ -928,7 +928,7 @@ state.IQaudIOCODEC {
 	control.73 {
 		iface MIXER
 		name 'Mixin Left Mic 1 Switch'
-		value false
+		value true
 		comment {
 			access 'read write'
 			type BOOLEAN
